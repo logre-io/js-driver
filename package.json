@@ -10,6 +10,8 @@
     "esm/**"
   ],
   "scripts": {
+    "release": "npm publish",
+    "releaseNext": "npm publish --tag next",
     "prepare": "npm run build",
     "build": "npm run build:esm && npm run build:cjs",
     "build:cjs": "rm -rf ./dist && ncc build index.ts -o dist -m",
