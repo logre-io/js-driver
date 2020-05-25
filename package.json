@@ -1,15 +1,31 @@
 {
   "name": "logreio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "JS Driver for Logre.IO",
+  "main": "./dist/index.js",
+  "module": "./esm/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**",
+    "esm/**"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "npm run build",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:cjs": "rm -rf ./dist && ncc build index.ts -o dist -m",
+    "build:esm": "rm -rf ./esm && tsc --target ESNext --module ES6 --outDir esm"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "logre",
+    "logreio",
+    "logging",
+    "monitoring",
+    "logs"
+  ],
+  "author": "Logre.IO",
   "license": "ISC",
   "dependencies": {
+    "@zeit/ncc": "^0.22.3",
     "cross-fetch": "^3.0.4",
     "typescript": "^3.9.3"
   }
