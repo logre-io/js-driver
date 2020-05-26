@@ -1,13 +1,13 @@
 import fetch from "cross-fetch";
 
-type Box = { id: BoxId; key?: BoxKey };
-type BoxKey = string;
-type BoxId = string;
+export type Box = { id: BoxId; key?: BoxKey };
+export type BoxKey = string;
+export type BoxId = string;
 
-type Log = LogText | LogObject;
-type LogText = string;
-type LogObject = Record<string, any>;
-enum LogSeverity {
+export type Log = LogText | LogObject;
+export type LogText = string;
+export type LogObject = Record<string, any>;
+export enum LogSeverity {
   debug = "debug",
   info = "info",
   warning = "warning",
