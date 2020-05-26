@@ -1,6 +1,8 @@
 {
   "name": "logreio",
-  "version": "0.0.0",
+  "repository": "logre-io/js-driver",
+  "homepage": "https://github.com/logre-io/js-driver",
+  "version": "0.1.0",
   "description": "JS Driver for Logre.IO",
   "main": "./dist/index.js",
   "module": "./esm/index.js",
