@@ -10,7 +10,7 @@ export type LogObject = Record<string, any>;
 export enum LogSeverity {
   debug = "debug",
   info = "info",
-  warning = "warning",
+  warn = "warn",
   error = "error",
   fatal = "fatal",
 }
@@ -42,8 +42,8 @@ export default class Client {
     return this.logWithSeverity(data, LogSeverity.info);
   }
 
-  async warning(data: Log) {
-    return this.logWithSeverity(data, LogSeverity.warning);
+  async warn(data: Log) {
+    return this.logWithSeverity(data, LogSeverity.warn);
   }
 
   async error(data: Log) {

@@ -35,6 +35,6 @@ logger.info({
 You can you some severities to add urgency meaning to your logs. The available severities are:
 - Debug `logger.debug()`
 - Info `logger.info()`
-- Warning `logger.warning()`
+- Warn `logger.warn()`
 - Error `logger.error()`
 - Fatal `logger.fatal()`

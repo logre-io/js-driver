@@ -2,7 +2,7 @@
   "name": "logreio",
   "repository": "logre-io/js-driver",
   "homepage": "https://github.com/logre-io/js-driver",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "JS Driver for Logre.IO",
   "main": "./dist/index.js",
   "module": "./esm/index.js",
